@@ -101,42 +101,31 @@ Task Management System/
 
 ### Prerequisites
 *   Node.js (v18.0.0 or higher)
-*   MongoDB running locally (`mongodb://localhost:27017`) or a MongoDB Atlas URI
+*   MongoDB running locally or MongoDB Atlas
 
-### Step 1: Clone and Environment Configs
-1. Ensure files are in your local workspace.
-2. In the `backend/` folder, confirm the `.env` file exists with the following parameters:
-   ```env
-   PORT=5000
-   MONGODB_URI=mongodb://127.0.0.1:27017/taskmanager
-   JWT_SECRET=super_secret_internship_task_management_project_key
-   NODE_ENV=development
-   ```
+### Step 1: Backend environment variables
+1. Go to `backend/`.
+2. Copy `.env.example` to `.env`.
+3. Fill in the values for:
+   * `PORT` (default: `5000`)
+   * `MONGODB_URI`
+   * `JWT_SECRET`
+   * `NODE_ENV`
 
-### Step 2: Running Backend Server
+### Step 2: Run backend
 ```bash
-# Navigate to backend directory
 cd backend
-
-# Install dependencies
 npm install
-
-# Run the backend in development hot-reload mode
 npm run dev
-# Server will run on http://localhost:5000
+# http://localhost:5000
 ```
 
-### Step 3: Running Frontend Client
+### Step 3: Run frontend
 ```bash
-# Navigate to frontend directory
 cd frontend
-
-# Install dependencies
 npm install
-
-# Run the frontend build server
 npm run dev
-# Application client will run on http://localhost:3000
+# http://localhost:3000
 ```
 
 ---
